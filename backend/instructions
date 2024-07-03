@@ -1,0 +1,45 @@
+# cd into the base dir
+
+# run
+npm install
+npm run dev
+
+cd backend
+# run
+
+composer install
+composer update
+# to install composer packages that the backend is dependent on
+
+# then time for the migrations
+
+# make a copy .env.example and rename it to .env
+# make sure you have a mysql db with the corresponding name inside your new .env file
+# or uncomment the sqlite db config that wil work on the fly
+
+# next, run migrations, seed your db with the sample model factories and then artisan serve the app
+php artisan migrate
+php artisan db:seed
+php artisan serve
+
+# to test the available backend unit tests of the Task and Project Controllers,
+# run
+php artisan test
+
+# After running these tests, please seed the db again since each test refreshes the db
+php artisan migrate:fresh --seed
+
+DB is now seeded.
+
+go to http://localhost:5173/ to login
+use default login details as 
+
+email: 'janedoe@example.com'
+password: 'password'
+
+Interact with the system
+
+
+
+
+

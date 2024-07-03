@@ -1,0 +1,449 @@
+the following are the json responses for each of the actions i have performed and tested on the tasks endpoints to do the following.
+
+
+view all tasks
+
+{
+    "message": "Tasks retrieved successfully",
+    "data": [
+        {
+            "id": 1,
+            "name": "Create Database",
+            "description": "Qui aut dolorum quae.",
+            "project_id": 1,
+            "priority": "High",
+            "status": "in_progress",
+            "implementation_date": "2025-03-31",
+            "created_at": "2024-06-26T22:24:44.000000Z",
+            "updated_at": "2024-06-26T22:24:44.000000Z",
+            "deleted_at": null,
+            "project": {
+                "id": 1,
+                "name": "Meridian",
+                "created_at": "2024-06-26T22:24:43.000000Z",
+                "updated_at": "2024-06-26T22:24:43.000000Z",
+                "deleted_at": null
+            },
+            "users": [
+                {
+                    "id": 4,
+                    "name": "Florencio Klein",
+                    "email": "america.corwin@example.com",
+                    "email_verified_at": "2024-06-26T22:24:36.000000Z",
+                    "profile_pic": "https://via.placeholder.com/200x200.png/0044cc?text=people+et",
+                    "created_at": "2024-06-26T22:24:39.000000Z",
+                    "updated_at": "2024-06-26T22:24:39.000000Z",
+                    "pivot": {
+                        "task_id": 1,
+                        "user_id": 4
+                    }
+                },
+                {
+                    "id": 9,
+                    "name": "Tia Stiedemann DVM",
+                    "email": "cara45@example.org",
+                    "email_verified_at": "2024-06-26T22:24:37.000000Z",
+                    "profile_pic": "https://via.placeholder.com/200x200.png/005599?text=people+quo",
+                    "created_at": "2024-06-26T22:24:41.000000Z",
+                    "updated_at": "2024-06-26T22:24:41.000000Z",
+                    "pivot": {
+                        "task_id": 1,
+                        "user_id": 9
+                    }
+                }
+            ],
+            "tags": [
+                {
+                    "id": 1,
+                    "name": "Prototype",
+                    "created_at": "2024-06-26T22:24:41.000000Z",
+                    "updated_at": "2024-06-26T22:24:41.000000Z",
+                    "pivot": {
+                        "task_id": 1,
+                        "tag_id": 1
+                    }
+                },
+                {
+                    "id": 4,
+                    "name": "Design system",
+                    "created_at": "2024-06-26T22:24:43.000000Z",
+                    "updated_at": "2024-06-26T22:24:43.000000Z",
+                    "pivot": {
+                        "task_id": 1,
+                        "tag_id": 4
+                    }
+                }
+            ]
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+show a single task
+
+{
+    "message": "Task retrieved successfully",
+    "data": {
+        "id": 2,
+        "name": "Create Database",
+        "description": "Laborum non ut eaque.",
+        "project_id": 1,
+        "priority": "High",
+        "status": "in_progress",
+        "implementation_date": "2025-04-18",
+        "created_at": "2024-06-26T22:24:44.000000Z",
+        "updated_at": "2024-06-26T22:24:44.000000Z",
+        "deleted_at": null,
+        "project": {
+            "id": 1,
+            "name": "Meridian",
+            "created_at": "2024-06-26T22:24:43.000000Z",
+            "updated_at": "2024-06-26T22:24:43.000000Z",
+            "deleted_at": null
+        },
+        "users": [
+            {
+                "id": 4,
+                "name": "Florencio Klein",
+                "email": "america.corwin@example.com",
+                "email_verified_at": "2024-06-26T22:24:36.000000Z",
+                "profile_pic": "https://via.placeholder.com/200x200.png/0044cc?text=people+et",
+                "created_at": "2024-06-26T22:24:39.000000Z",
+                "updated_at": "2024-06-26T22:24:39.000000Z",
+                "pivot": {
+                    "task_id": 2,
+                    "user_id": 4
+                }
+            },
+            {
+                "id": 9,
+                "name": "Tia Stiedemann DVM",
+                "email": "cara45@example.org",
+                "email_verified_at": "2024-06-26T22:24:37.000000Z",
+                "profile_pic": "https://via.placeholder.com/200x200.png/005599?text=people+quo",
+                "created_at": "2024-06-26T22:24:41.000000Z",
+                "updated_at": "2024-06-26T22:24:41.000000Z",
+                "pivot": {
+                    "task_id": 2,
+                    "user_id": 9
+                }
+            }
+        ],
+        "tags": [
+            {
+                "id": 2,
+                "name": "Research",
+                "created_at": "2024-06-26T22:24:42.000000Z",
+                "updated_at": "2024-06-26T22:24:42.000000Z",
+                "pivot": {
+                    "task_id": 2,
+                    "tag_id": 2
+                }
+            },
+            {
+                "id": 3,
+                "name": "Design",
+                "created_at": "2024-06-26T22:24:42.000000Z",
+                "updated_at": "2024-06-26T22:24:42.000000Z",
+                "pivot": {
+                    "task_id": 2,
+                    "tag_id": 3
+                }
+            },
+            {
+                "id": 3,
+                "name": "Design",
+                "created_at": "2024-06-26T22:24:42.000000Z",
+                "updated_at": "2024-06-26T22:24:42.000000Z",
+                "pivot": {
+                    "task_id": 2,
+                    "tag_id": 3
+                }
+            }
+        ]
+    }
+}
+
+
+
+
+
+task deleted successfully
+
+
+
+{
+    "message": "Task deleted successfully"
+}
+
+
+
+show deleted tasks
+
+
+{
+    "message": "This task was deleted recently",
+    "data": [
+        {
+            "id": 4,
+            "name": "Create Database",
+            "description": "Quia ea quia quia.",
+            "project_id": 2,
+            "priority": "High",
+            "status": "todo",
+            "implementation_date": "2025-04-16",
+            "created_at": "2024-06-26T22:25:09.000000Z",
+            "updated_at": "2024-06-26T22:54:57.000000Z",
+            "deleted_at": "2024-06-26T22:54:57.000000Z",
+            "project": {
+                "id": 2,
+                "name": "Risen",
+                "created_at": "2024-06-26T22:25:04.000000Z",
+                "updated_at": "2024-06-26T22:25:04.000000Z",
+                "deleted_at": null
+            },
+            "users": [
+                {
+                    "id": 6,
+                    "name": "Amira Koch",
+                    "email": "zack57@example.com",
+                    "email_verified_at": "2024-06-26T22:24:36.000000Z",
+                    "profile_pic": "https://via.placeholder.com/200x200.png/005544?text=people+molestiae",
+                    "created_at": "2024-06-26T22:24:39.000000Z",
+                    "updated_at": "2024-06-26T22:24:39.000000Z",
+                    "pivot": {
+                        "task_id": 4,
+                        "user_id": 6
+                    }
+                },
+                {
+                    "id": 10,
+                    "name": "Gaylord Crona",
+                    "email": "derrick68@example.com",
+                    "email_verified_at": "2024-06-26T22:24:38.000000Z",
+                    "profile_pic": "https://via.placeholder.com/200x200.png/008811?text=people+et",
+                    "created_at": "2024-06-26T22:24:41.000000Z",
+                    "updated_at": "2024-06-26T22:24:41.000000Z",
+                    "pivot": {
+                        "task_id": 4,
+                        "user_id": 10
+                    }
+                },
+                {
+                    "id": 2,
+                    "name": "Prof. Kamren Baumbach",
+                    "email": "wolf.lera@example.org",
+                    "email_verified_at": "2024-06-26T22:24:35.000000Z",
+                    "profile_pic": "https://via.placeholder.com/200x200.png/000055?text=people+quo",
+                    "created_at": "2024-06-26T22:24:38.000000Z",
+                    "updated_at": "2024-06-26T22:24:38.000000Z",
+                    "pivot": {
+                        "task_id": 4,
+                        "user_id": 2
+                    }
+                }
+            ],
+            "tags": [
+                {
+                    "id": 4,
+                    "name": "Design system",
+                    "created_at": "2024-06-26T22:24:43.000000Z",
+                    "updated_at": "2024-06-26T22:24:43.000000Z",
+                    "pivot": {
+                        "task_id": 4,
+                        "tag_id": 4
+                    }
+                },
+                {
+                    "id": 2,
+                    "name": "Research",
+                    "created_at": "2024-06-26T22:24:42.000000Z",
+                    "updated_at": "2024-06-26T22:24:42.000000Z",
+                    "pivot": {
+                        "task_id": 4,
+                        "tag_id": 2
+                    }
+                }
+            ]
+        }
+    ]
+}
+
+
+
+
+
+
+update a task
+
+{
+    "message": "Task updated successfully",
+    "data": {
+        "id": 4,
+        "name": "Create Database",
+        "description": "Quia ea quia quia.",
+        "project_id": 2,
+        "priority": "High",
+        "status": "todo",
+        "implementation_date": "2025-04-16",
+        "created_at": "2024-06-26T22:25:09.000000Z",
+        "updated_at": "2024-06-26T23:06:46.000000Z",
+        "deleted_at": null,
+        "project": {
+            "id": 2,
+            "name": "Risen",
+            "created_at": "2024-06-26T22:25:04.000000Z",
+            "updated_at": "2024-06-26T22:25:04.000000Z",
+            "deleted_at": null
+        },
+        "users": [
+            {
+                "id": 6,
+                "name": "Amira Koch",
+                "email": "zack57@example.com",
+                "email_verified_at": "2024-06-26T22:24:36.000000Z",
+                "profile_pic": "https://via.placeholder.com/200x200.png/005544?text=people+molestiae",
+                "created_at": "2024-06-26T22:24:39.000000Z",
+                "updated_at": "2024-06-26T22:24:39.000000Z",
+                "pivot": {
+                    "task_id": 4,
+                    "user_id": 6
+                }
+            },
+            {
+                "id": 10,
+                "name": "Gaylord Crona",
+                "email": "derrick68@example.com",
+                "email_verified_at": "2024-06-26T22:24:38.000000Z",
+                "profile_pic": "https://via.placeholder.com/200x200.png/008811?text=people+et",
+                "created_at": "2024-06-26T22:24:41.000000Z",
+                "updated_at": "2024-06-26T22:24:41.000000Z",
+                "pivot": {
+                    "task_id": 4,
+                    "user_id": 10
+                }
+            },
+            {
+                "id": 2,
+                "name": "Prof. Kamren Baumbach",
+                "email": "wolf.lera@example.org",
+                "email_verified_at": "2024-06-26T22:24:35.000000Z",
+                "profile_pic": "https://via.placeholder.com/200x200.png/000055?text=people+quo",
+                "created_at": "2024-06-26T22:24:38.000000Z",
+                "updated_at": "2024-06-26T22:24:38.000000Z",
+                "pivot": {
+                    "task_id": 4,
+                    "user_id": 2
+                }
+            }
+        ],
+        "tags": [
+            {
+                "id": 4,
+                "name": "Design system",
+                "created_at": "2024-06-26T22:24:43.000000Z",
+                "updated_at": "2024-06-26T22:24:43.000000Z",
+                "pivot": {
+                    "task_id": 4,
+                    "tag_id": 4
+                }
+            },
+            {
+                "id": 2,
+                "name": "Research",
+                "created_at": "2024-06-26T22:24:42.000000Z",
+                "updated_at": "2024-06-26T22:24:42.000000Z",
+                "pivot": {
+                    "task_id": 4,
+                    "tag_id": 2
+                }
+            }
+        ]
+    }
+}
+
+
+
+
+
+
+Add new task
+
+
+{
+    "message": "Task created successfully",
+    "data": {
+        "name": "qqqqqqqqqqqqqq",
+        "description": "This is a sample task description.",
+        "project_id": 1,
+        "priority": "High",
+        "status": "todo",
+        "implementation_date": "2024-07-01",
+        "updated_at": "2024-06-26T23:21:22.000000Z",
+        "created_at": "2024-06-26T23:21:22.000000Z",
+        "id": 13
+    }
+}
+
+
+
+Restore all deleted tasks
+
+{
+    "message": "All tasks restored successfully"
+}
+
+
+
+
+
+tasks past implementation date
+
+
+{
+    "message": "Tasks past implementation date retrieved successfully",
+    "data": [
+        {
+            "id": 9,
+            "name": "44444444444",
+            "description": "Quia ea quia quia.",
+            "project_id": 2,
+            "priority": "Low",
+            "status": "todo",
+            "implementation_date": "2020-04-16",
+            "created_at": "2024-06-26T23:13:09.000000Z",
+            "updated_at": "2024-06-26T23:13:09.000000Z",
+            "deleted_at": null
+        },
+        {
+            "id": 10,
+            "name": "44444444444",
+            "description": "Quia ea quia quia.",
+            "project_id": 2,
+            "priority": "Low",
+            "status": "todo",
+            "implementation_date": "2020-04-16",
+            "created_at": "2024-06-26T23:14:13.000000Z",
+            "updated_at": "2024-06-26T23:14:13.000000Z",
+            "deleted_at": null
+        },
+        {
+            "id": 11,
+            "name": "44444444444",
+            "description": "Quia ea quia quia.",
+            "project_id": 2,
+            "priority": "Low",
+            "status": "todo",
+            "implementation_date": "2020-04-16",
+            "created_at": "2024-06-26T23:15:58.000000Z",
+            "updated_at": "2024-06-26T23:15:58.000000Z",
+            "deleted_at": null
+        }
+    ]
+}
